@@ -13,9 +13,9 @@ export const INSTAGRAM_LINK = "https://www.instagram.com/draluizacarla/";
 export const IMAGES = {
   logo: "https://i.imgur.com/qMTZ21m.png",
   main: "https://i.imgur.com/7DkhQnc.png",
-  secondary: "https://i.imgur.com/Hy61Zvx.png",
-  tertiary: "https://i.imgur.com/Hy61Zvx.png",
-  about: "https://i.imgur.com/u15T9Iv.png",
+  secondary: "https://i.imgur.com/wAzZJsH.png",
+  tertiary: "https://i.imgur.com/80sXN0E.png",
+  about: "https://i.imgur.com/wAzZJsH.png",
   results: [
     "https://i.imgur.com/Kg7WDho.png",
     "https://i.imgur.com/SvE326q.png",
