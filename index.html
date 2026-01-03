@@ -19,6 +19,10 @@
       .font-serif {
         font-family: 'Playfair Display', serif;
       }
+      ::selection {
+        background-color: #d4af37;
+        color: #000;
+      }
       ::-webkit-scrollbar {
         width: 6px;
       }
@@ -30,9 +34,18 @@
         border-radius: 10px;
       }
       .glass {
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(212, 175, 55, 0.03);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #d4af37 100%);
+      }
+      .text-gold {
+        color: #d4af37;
+      }
+      .border-gold {
+        border-color: #d4af37;
       }
       @keyframes float {
         0%, 100% { transform: translateY(0); }
@@ -40,6 +53,9 @@
       }
       .animate-float {
         animation: float 4s ease-in-out infinite;
+      }
+      .gold-shadow {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
       }
     </style>
   <script type="importmap">

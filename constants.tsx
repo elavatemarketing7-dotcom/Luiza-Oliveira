@@ -4,7 +4,10 @@ import { Shield, Sparkles, UserCheck, Heart, Clock, CheckCircle } from 'lucide-r
 
 export const EXPERT_NAME = "Luiza Oliveira";
 export const EXPERT_TITLE = "Especialista em Harmonização Facial e Cirurgiã Dentista";
-export const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5583998225253&text=Oi!%20Eu%20quero%20a%20pele%20dos%20meus%20sonhos%20%F0%9F%A4%A9%F0%9F%98%8D";
+// Using wa.me for more reliable mobile redirection
+export const WHATSAPP_NUMBER = "5583998225253";
+export const WHATSAPP_BASE_MSG = "Oi! Eu quero a pele dos meus sonhos 🤩😍";
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_BASE_MSG)}`;
 export const INSTAGRAM_LINK = "https://www.instagram.com/draluizacarla/";
 
 export const IMAGES = {

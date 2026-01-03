@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
       {/* HERO SECTION */}
       <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-end overflow-hidden pb-12 lg:pb-0">
         <div className="absolute top-8 left-8 z-20">
-             <img src={IMAGES.logo} alt="Logo" className="w-16 lg:w-24 opacity-90 filter drop-shadow-[0_0_10px_rgba(212,175,55,0.3)]" />
+             <img src={IMAGES.logo} alt="Logo" className="w-16 lg:w-24 opacity-90 filter drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]" />
         </div>
         
         <div className="absolute top-0 right-0 w-full lg:w-3/5 h-[80vh] lg:h-full z-0">
@@ -22,8 +22,8 @@ const LandingPage: React.FC = () => {
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 lg:pt-0 flex flex-col justify-center h-full">
           <div className="lg:max-w-xl animate-in slide-in-from-left-8 duration-1000">
-            <h2 className="text-[#d4af37] font-medium tracking-[0.3em] uppercase text-sm mb-4">
-              Bem-vinda ao seu novo eu
+            <h2 className="text-[#d4af37] font-medium tracking-[0.4em] uppercase text-xs mb-4">
+              A Excelência em Harmonização
             </h2>
             <h1 className="text-5xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
               A harmonia perfeita <br className="hidden lg:block"/> entre <span className="text-[#d4af37]">ciência e arte</span>.
@@ -37,14 +37,14 @@ const LandingPage: React.FC = () => {
                 href={WHATSAPP_LINK} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 bg-[#d4af37] text-black font-bold py-6 px-8 rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all text-lg"
+                className="flex items-center justify-center gap-3 bg-[#d4af37] text-black font-bold py-6 px-8 rounded-2xl shadow-[0_10px_30px_rgba(212,175,55,0.3)] hover:scale-105 active:scale-95 transition-all text-lg"
               >
                 <MessageCircle className="w-6 h-6" />
                 Agendar consulta no WhatsApp
               </a>
             </div>
-            <p className="mt-4 text-white/40 text-sm flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#d4af37]" />
+            <p className="mt-6 text-[#d4af37]/60 text-sm flex items-center gap-2 font-medium tracking-wide">
+              <CheckCircle2 className="w-4 h-4" />
               Sua primeira avaliação sem compromisso
             </p>
           </div>
@@ -52,11 +52,11 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* QUEM SOU EU */}
-      <section className="py-24 px-6 bg-[#111]">
+      <section className="py-24 px-6 bg-[#0a0a0a] border-y border-[#d4af37]/5">
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
             <h3 className="text-[#d4af37] font-medium tracking-[0.2em] uppercase text-xs mb-4">Autoridade & Essência</h3>
-            <h2 className="text-4xl font-serif font-bold mb-8">Muito além de estética, <br/> é sobre <span className="italic">confiança</span>.</h2>
+            <h2 className="text-4xl font-serif font-bold mb-8">Muito além de estética, <br/> é sobre <span className="italic text-[#d4af37]">confiança</span>.</h2>
             <div className="space-y-6 text-white/70 font-light leading-relaxed">
               <p>
                 Como Cirurgiã Dentista apaixonada pela anatomia facial, entendi que a verdadeira harmonização não é sobre volume exagerado, mas sobre proporção e equilíbrio.
@@ -73,7 +73,7 @@ const LandingPage: React.FC = () => {
                   "Mais de 1.000 faces transformadas com naturalidade"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37] mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#d4af37] mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(212,175,55,0.6)]"></span>
                     <span className="text-white font-medium">{item}</span>
                   </li>
                 ))}
@@ -81,13 +81,13 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="relative p-2 bg-gradient-to-br from-[#d4af37]/40 to-transparent rounded-[3rem]">
+            <div className="relative p-2 bg-gradient-to-br from-[#d4af37]/40 to-transparent rounded-[3rem] shadow-2xl">
               <img 
                 src={IMAGES.about} 
                 alt="Luiza Oliveira" 
-                className="w-full h-[600px] object-cover rounded-[2.5rem] shadow-2xl"
+                className="w-full h-[600px] object-cover rounded-[2.5rem]"
               />
-              <div className="absolute -bottom-6 -left-6 glass p-6 rounded-2xl border-[#d4af37]/20 hidden lg:block">
+              <div className="absolute -bottom-6 -left-6 glass p-6 rounded-2xl border-[#d4af37]/20 hidden lg:block gold-shadow">
                 <p className="text-3xl font-serif font-bold text-[#d4af37]">Dra. Luiza</p>
                 <p className="text-xs uppercase tracking-widest text-white/60">Cirurgiã Dentista</p>
               </div>
@@ -97,12 +97,12 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* RESULTADOS REAIS */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-[#0c0c0c]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold mb-4">Resultados Reais</h2>
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold mb-4">Galeria de <span className="text-[#d4af37]">Resultados</span></h2>
             <p className="text-white/60 font-light max-w-2xl mx-auto">
-              Confira algumas transformações recentes. Cada rosto é único e cada protocolo é desenhado exclusivamente para o seu perfil.
+              Cada rosto é único e cada protocolo é desenhado exclusivamente para o seu perfil.
             </p>
           </div>
 
@@ -110,39 +110,41 @@ const LandingPage: React.FC = () => {
             {IMAGES.results.map((url, i) => (
               <div 
                 key={i} 
-                className="relative group overflow-hidden rounded-2xl bg-white/5 cursor-pointer"
+                className="relative group overflow-hidden rounded-2xl bg-[#1a1a1a] cursor-pointer border border-[#d4af37]/5 hover:border-[#d4af37]/30 transition-all duration-500"
                 onClick={() => setSelectedImage(url)}
               >
                 <img 
                   src={url} 
                   alt={`Resultado ${i+1}`} 
-                  className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700" 
+                  className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" 
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <ZoomIn className="text-white w-8 h-8" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
+                  <div className="p-3 rounded-full bg-[#d4af37]/20 backdrop-blur-sm border border-[#d4af37]/40">
+                    <ZoomIn className="text-[#d4af37] w-6 h-6" />
+                  </div>
                 </div>
               </div>
             ))}
           </div>
           
-          <div className="mt-12 text-center text-white/30 text-sm italic">
+          <div className="mt-12 text-center text-[#d4af37]/40 text-sm italic tracking-wide">
             *Resultados individuais podem variar de acordo com o metabolismo e características de cada paciente.
           </div>
         </div>
       </section>
 
-      {/* MAIS PROVAS - BASTIDORES (Moved here near Resultados Reais) */}
-      <section className="py-24 px-6 bg-[#111] border-y border-white/5">
+      {/* MAIS PROVAS - BASTIDORES */}
+      <section className="py-24 px-6 bg-[#0a0a0a] border-y border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
             <div className="max-w-xl text-center md:text-left">
-              <h2 className="text-4xl font-serif font-bold mb-4">Minha Rotina, Sua Segurança</h2>
+              <h2 className="text-4xl font-serif font-bold mb-4">Bastidores da <span className="text-[#d4af37]">Excelência</span></h2>
               <p className="text-white/60 font-light leading-relaxed">
-                Acompanhe os bastidores dos meus atendimentos e a dedicação técnica em cada detalhe para garantir o seu conforto e os melhores resultados.
+                Acompanhe a dedicação técnica em cada detalhe para garantir o seu conforto e os melhores resultados.
               </p>
             </div>
-            <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#d4af37] font-bold hover:underline group">
+            <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#d4af37] font-bold hover:text-[#f1d592] transition-all group">
               <Instagram className="w-5 h-5 transition-transform group-hover:scale-110" />
               Ver mais no Instagram
             </a>
@@ -150,8 +152,8 @@ const LandingPage: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {IMAGES.extra.map((url, i) => (
-              <div key={i} className="h-64 md:h-80 rounded-3xl overflow-hidden group border border-white/5 shadow-2xl bg-white/5">
-                <img src={url} alt={`Bastidores ${i+1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <div key={i} className="h-64 md:h-80 rounded-3xl overflow-hidden group border border-[#d4af37]/5 shadow-2xl bg-[#111]">
+                <img src={url} alt={`Bastidores ${i+1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" loading="lazy" />
               </div>
             ))}
           </div>
@@ -163,12 +165,12 @@ const LandingPage: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {WHY_TRUST.map((item, i) => (
-              <div key={i} className="glass p-10 rounded-3xl border-[#d4af37]/10 flex flex-col gap-6 hover:border-[#d4af37]/40 transition-colors">
-                <div className="w-16 h-16 rounded-2xl bg-[#d4af37]/10 flex items-center justify-center">
+              <div key={i} className="glass p-10 rounded-3xl flex flex-col gap-6 hover:border-[#d4af37]/50 transition-all duration-500 group">
+                <div className="w-16 h-16 rounded-2xl bg-[#d4af37]/10 flex items-center justify-center group-hover:bg-[#d4af37]/20 transition-colors">
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-2xl font-serif font-bold mb-3">{item.title}</h4>
+                  <h4 className="text-2xl font-serif font-bold mb-3 text-[#d4af37]">{item.title}</h4>
                   <p className="text-white/60 font-light leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -178,36 +180,38 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* CTA INTERMEDIÁRIO */}
-      <section className="py-20 px-6 bg-gradient-to-r from-[#0c0c0c] to-[#1a1a1a] text-center border-y border-[#d4af37]/20">
+      <section className="py-20 px-6 bg-gradient-to-b from-[#0c0c0c] to-[#1a1a1a] text-center border-y border-[#d4af37]/20">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-serif font-bold mb-8 italic">Você merece se sentir maravilhosa todos os dias.</h2>
+          <h2 className="text-3xl font-serif font-bold mb-8 italic text-white/90">Você merece se sentir maravilhosa todos os dias.</h2>
           <a 
             href={WHATSAPP_LINK}
-            className="inline-flex items-center gap-4 bg-[#d4af37] text-black font-bold py-6 px-10 rounded-2xl shadow-xl hover:scale-105 transition-all text-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-4 bg-[#d4af37] text-black font-extrabold py-6 px-10 rounded-2xl shadow-[0_10px_40px_rgba(212,175,55,0.4)] hover:scale-105 transition-all text-lg uppercase tracking-widest"
           >
-            Quero agendar minha avaliação agora
+            Quero agendar agora
             <ChevronRight className="w-6 h-6" />
           </a>
         </div>
       </section>
 
       {/* COMO FUNCIONA */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-[#0c0c0c]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-serif font-bold mb-6">Sua Jornada Conosco</h2>
+            <h2 className="text-4xl font-serif font-bold mb-6">Sua Jornada de <span className="text-[#d4af37]">Beleza</span></h2>
             <p className="text-white/60 max-w-xl mx-auto">Três passos simples para você conquistar a sua melhor versão.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-12 relative">
-            <div className="hidden md:block absolute top-10 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
+            <div className="hidden md:block absolute top-10 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#d4af37]/40 to-transparent"></div>
             {HOW_IT_WORKS.map((step, i) => (
               <div key={i} className="relative flex flex-col items-center text-center group">
-                <div className="w-20 h-20 rounded-full glass border-[#d4af37]/30 flex items-center justify-center text-2xl font-serif font-bold text-[#d4af37] mb-8 group-hover:bg-[#d4af37] group-hover:text-black transition-all duration-500 z-10">
+                <div className="w-20 h-20 rounded-full glass border-[#d4af37]/40 flex items-center justify-center text-2xl font-serif font-bold text-[#d4af37] mb-8 group-hover:bg-[#d4af37] group-hover:text-black transition-all duration-500 z-10 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
                   {step.step}
                 </div>
-                <h4 className="text-xl font-bold mb-4">{step.title}</h4>
-                <p className="text-white/60 font-light text-sm px-6">{step.desc}</p>
+                <h4 className="text-xl font-bold mb-4 text-[#f1d592]">{step.title}</h4>
+                <p className="text-white/60 font-light text-sm px-6 leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -215,8 +219,8 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-32 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-[#d4af37]/5 pointer-events-none"></div>
+      <section className="py-32 px-6 relative overflow-hidden bg-[#0c0c0c]">
+        <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#d4af37]/10 to-transparent pointer-events-none"></div>
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h2 className="text-5xl lg:text-6xl font-serif font-bold mb-8 leading-tight">
             Pronta para dar o primeiro passo rumo à <span className="text-[#d4af37]">sua transformação?</span>
@@ -228,12 +232,14 @@ const LandingPage: React.FC = () => {
           <div className="flex flex-col items-center gap-6">
             <a 
               href={WHATSAPP_LINK}
-              className="group flex items-center justify-center gap-4 bg-[#d4af37] text-black font-bold py-7 px-16 rounded-[2rem] shadow-2xl hover:scale-105 active:scale-95 transition-all text-xl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center gap-4 bg-[#d4af37] text-black font-extrabold py-7 px-16 rounded-[2rem] shadow-[0_20px_50px_rgba(212,175,55,0.4)] hover:scale-105 active:scale-95 transition-all text-xl uppercase tracking-widest"
             >
               <MessageCircle className="w-7 h-7" />
               Agendar Agora no WhatsApp
             </a>
-            <p className="text-white/40 flex items-center gap-2">
+            <p className="text-[#d4af37]/50 flex items-center gap-2 font-medium">
               Atendimento em João Pessoa, Campina Grande e Cuité - PB
             </p>
           </div>
@@ -241,25 +247,25 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-16 px-6 border-t border-white/5">
+      <footer className="py-16 px-6 border-t border-[#d4af37]/20 bg-[#080808]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="text-center md:text-left space-y-4">
-            <img src={IMAGES.logo} alt="Logo" className="h-12 mb-4 mx-auto md:mx-0 opacity-90" />
-            <p className="text-4xl font-serif italic text-white/90">{EXPERT_NAME}</p>
+            <img src={IMAGES.logo} alt="Logo" className="h-14 mb-4 mx-auto md:mx-0 opacity-90 filter drop-shadow-[0_0_10px_rgba(212,175,55,0.3)]" />
+            <p className="text-4xl font-serif italic text-[#d4af37]">{EXPERT_NAME}</p>
             <p className="text-white/40 text-sm max-w-xs">{EXPERT_TITLE}</p>
-            <div className="flex items-center justify-center md:justify-start gap-4 text-white/60">
-              <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors"><Instagram /></a>
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors"><MessageCircle /></a>
+            <div className="flex items-center justify-center md:justify-start gap-4 text-[#d4af37]">
+              <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 glass rounded-full"><Instagram size={20} /></a>
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 glass rounded-full"><MessageCircle size={20} /></a>
             </div>
           </div>
           
-          <div className="flex flex-col items-center md:items-end gap-2 text-white/40 text-sm">
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-[#d4af37]" />
-              <span>João Pessoa • Campina Grande • Cuité - PB</span>
+          <div className="flex flex-col items-center md:items-end gap-3 text-white/40 text-sm">
+            <div className="flex items-center gap-2 text-[#d4af37]/60">
+              <MapPin className="w-4 h-4" />
+              <span className="font-medium tracking-wide">João Pessoa • Campina Grande • Cuité - PB</span>
             </div>
             <p>© {new Date().getFullYear()} - Todos os direitos reservados</p>
-            <p className="text-[10px] uppercase tracking-widest mt-4">Design Premium by Expert Hub</p>
+            <p className="text-[10px] uppercase tracking-[0.4em] text-[#d4af37]/30 mt-4">Design Premium by Expert Hub</p>
           </div>
         </div>
       </footer>
@@ -267,16 +273,16 @@ const LandingPage: React.FC = () => {
       {/* LIGHTBOX MODAL */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 animate-in fade-in duration-300"
+          className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-300"
           onClick={() => setSelectedImage(null)}
         >
-          <button className="absolute top-6 right-6 p-3 bg-white/10 rounded-full text-white">
+          <button className="absolute top-6 right-6 p-4 bg-[#d4af37]/20 hover:bg-[#d4af37]/40 rounded-full text-[#d4af37] border border-[#d4af37]/30 transition-colors">
             <X className="w-8 h-8" />
           </button>
           <img 
             src={selectedImage} 
             alt="Resultado Zoom" 
-            className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl" 
+            className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-[0_0_100px_rgba(212,175,55,0.2)] border border-[#d4af37]/10" 
           />
         </div>
       )}
@@ -285,7 +291,9 @@ const LandingPage: React.FC = () => {
       <div className="md:hidden fixed bottom-6 right-6 z-[80]">
         <a 
           href={WHATSAPP_LINK}
-          className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl animate-bounce"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.4)] animate-bounce"
         >
           <MessageCircle className="w-8 h-8 text-white" />
         </a>
