@@ -2,6 +2,7 @@
 export enum AppStage {
   INTRO = 'INTRO',
   QUIZ = 'QUIZ',
+  LOADING = 'LOADING',
   RESULT = 'RESULT',
   SITE = 'SITE'
 }

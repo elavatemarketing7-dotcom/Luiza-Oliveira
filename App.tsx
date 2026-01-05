@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage';
 import Quiz from './components/Quiz';
 import ResultPage from './components/ResultPage';
 import Intro from './components/Intro';
+import Loading from './components/Loading';
 
 const App: React.FC = () => {
   const [stage, setStage] = useState<AppStage>(AppStage.INTRO);
@@ -20,6 +21,10 @@ const App: React.FC = () => {
   
   const handleQuizFinish = (results: QuizAnswers) => {
     setAnswers(results);
+    setStage(AppStage.LOADING);
+  };
+
+  const handleLoadingComplete = () => {
     setStage(AppStage.RESULT);
   };
 
@@ -33,6 +38,10 @@ const App: React.FC = () => {
       
       {stage === AppStage.QUIZ && (
         <Quiz onFinish={handleQuizFinish} onCancel={handleGoDirectly} />
+      )}
+
+      {stage === AppStage.LOADING && (
+        <Loading onComplete={handleLoadingComplete} />
       )}
 
       {stage === AppStage.RESULT && (
